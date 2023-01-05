@@ -1,0 +1,29 @@
+{
+  "name": "rollup-plugin-my-test",
+  "version": "1.0.0",
+  "description": "rollup-plugin-my-test",
+  "main": "index.js",
+  "scripts": {
+    "test": "rollup -c test/rollup.config.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citrus327/rollup-plugin-my-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/citrus327/rollup-plugin-my-test/issues"
+  },
+  "homepage": "https://github.com/citrus327/rollup-plugin-my-test#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.9.1"
+  },
+  "dependencies": {
+    "a-treeshakable-pkg": "^1.0.0",
+    "jquery": "^3.6.3"
+  }
+}
