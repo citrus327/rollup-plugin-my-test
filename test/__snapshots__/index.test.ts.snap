@@ -1,0 +1,175 @@
+// Vitest Snapshot v1
+
+exports[`suite > should passes 1`] = `
+[
+  {
+    "output": [
+      {
+        "code": "'use strict';
+
+var foo = \\"hello world!\\";
+
+const a = () => {
+  console.log(\`i'm function A\`);
+};
+
+var a_1 = a;
+
+function test() {
+  console.log(foo);
+}
+
+exports.a = a_1;
+exports.test = test;
+",
+        "dynamicImports": [],
+        "exports": [
+          "a",
+          "test",
+        ],
+        "facadeModuleId": "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js",
+        "fileName": "bundle.cjs",
+        "implicitlyLoadedBefore": [],
+        "importedBindings": {},
+        "imports": [],
+        "isDynamicEntry": false,
+        "isEntry": true,
+        "isImplicitEntry": false,
+        "map": null,
+        "moduleIds": [
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/foo.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.0.0/node_modules/a-treeshakable-pkg/dist/bundle.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js",
+        ],
+        "modules": {
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.0.0/node_modules/a-treeshakable-pkg/dist/bundle.js": {
+            "code": "const a = () => {
+  console.log(\`i'm function A\`);
+};
+
+var a_1 = a;",
+            "originalLength": 225,
+            "removedExports": [
+              "__moduleExports",
+              "b",
+              "c",
+              "default",
+            ],
+            "renderedExports": [
+              "a",
+            ],
+            "renderedLength": 67,
+          },
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/foo.js": {
+            "code": "var foo = \\"hello world!\\";",
+            "originalLength": 31,
+            "removedExports": [],
+            "renderedExports": [
+              "default",
+            ],
+            "renderedLength": 25,
+          },
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js": {
+            "code": "function test() {
+  console.log(foo);
+}",
+            "originalLength": 131,
+            "removedExports": [],
+            "renderedExports": [
+              "test",
+              "a",
+            ],
+            "renderedLength": 39,
+          },
+        },
+        "name": "index",
+        "referencedFiles": [],
+        "type": "chunk",
+      },
+    ],
+  },
+  {
+    "output": [
+      {
+        "code": "var foo = \\"hello world!\\";
+
+const a = () => {
+  console.log(\`i'm function A\`);
+};
+
+var a_1 = a;
+
+function test() {
+  console.log(foo);
+}
+
+export { a_1 as a, test };
+",
+        "dynamicImports": [],
+        "exports": [
+          "a",
+          "test",
+        ],
+        "facadeModuleId": "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js",
+        "fileName": "bundle.mjs",
+        "implicitlyLoadedBefore": [],
+        "importedBindings": {},
+        "imports": [],
+        "isDynamicEntry": false,
+        "isEntry": true,
+        "isImplicitEntry": false,
+        "map": null,
+        "moduleIds": [
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/foo.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.0.0/node_modules/a-treeshakable-pkg/dist/bundle.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js",
+        ],
+        "modules": {
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.0.0/node_modules/a-treeshakable-pkg/dist/bundle.js": {
+            "code": "const a = () => {
+  console.log(\`i'm function A\`);
+};
+
+var a_1 = a;",
+            "originalLength": 225,
+            "removedExports": [
+              "__moduleExports",
+              "b",
+              "c",
+              "default",
+            ],
+            "renderedExports": [
+              "a",
+            ],
+            "renderedLength": 67,
+          },
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/foo.js": {
+            "code": "var foo = \\"hello world!\\";",
+            "originalLength": 31,
+            "removedExports": [],
+            "renderedExports": [
+              "default",
+            ],
+            "renderedLength": 25,
+          },
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js": {
+            "code": "function test() {
+  console.log(foo);
+}",
+            "originalLength": 131,
+            "removedExports": [],
+            "renderedExports": [
+              "test",
+              "a",
+            ],
+            "renderedLength": 39,
+          },
+        },
+        "name": "index",
+        "referencedFiles": [],
+        "type": "chunk",
+      },
+    ],
+  },
+]
+`;

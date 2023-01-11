@@ -4,15 +4,18 @@
     "esModuleInterop": true,
     "lib": ["es6", "DOM"],
     "module": "ESNext",
+    "outDir": "dist",
+    "declaration": true,
     "moduleResolution": "node",
-    "noEmit": true,
     "noEmitOnError": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "skipLibCheck": true,
     "pretty": true,
     "sourceMap": true,
     "strict": true,
     "target": "es2019"
   },
+  "include": ["src"],
   "exclude": ["dist", "node_modules", "test/types"]
 }
