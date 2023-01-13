@@ -13,13 +13,11 @@ const a = () => {
   console.log(\`i'm function A\`);
 };
 
-var a_1 = a;
-
 function test() {
   console.log(foo);
 }
 
-exports.a = a_1;
+exports.a = a;
 exports.test = test;
 ",
         "dynamicImports": [],
@@ -27,7 +25,7 @@ exports.test = test;
           "a",
           "test",
         ],
-        "facadeModuleId": "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js",
+        "facadeModuleId": "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js",
         "fileName": "bundle.cjs",
         "implicitlyLoadedBefore": [],
         "importedBindings": {},
@@ -37,30 +35,26 @@ exports.test = test;
         "isImplicitEntry": false,
         "map": null,
         "moduleIds": [
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/foo.js",
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.0.0/node_modules/a-treeshakable-pkg/dist/bundle.js",
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/foo.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.1.0/node_modules/a-treeshakable-pkg/dist/bundle.esm.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js",
         ],
         "modules": {
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.0.0/node_modules/a-treeshakable-pkg/dist/bundle.js": {
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.1.0/node_modules/a-treeshakable-pkg/dist/bundle.esm.js": {
             "code": "const a = () => {
   console.log(\`i'm function A\`);
-};
-
-var a_1 = a;",
-            "originalLength": 225,
+};",
+            "originalLength": 185,
             "removedExports": [
-              "__moduleExports",
               "b",
               "c",
-              "default",
             ],
             "renderedExports": [
               "a",
             ],
-            "renderedLength": 67,
+            "renderedLength": 53,
           },
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/foo.js": {
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/foo.js": {
             "code": "var foo = \\"hello world!\\";",
             "originalLength": 31,
             "removedExports": [],
@@ -69,7 +63,7 @@ var a_1 = a;",
             ],
             "renderedLength": 25,
           },
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js": {
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js": {
             "code": "function test() {
   console.log(foo);
 }",
@@ -97,20 +91,18 @@ const a = () => {
   console.log(\`i'm function A\`);
 };
 
-var a_1 = a;
-
 function test() {
   console.log(foo);
 }
 
-export { a_1 as a, test };
+export { a, test };
 ",
         "dynamicImports": [],
         "exports": [
           "a",
           "test",
         ],
-        "facadeModuleId": "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js",
+        "facadeModuleId": "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js",
         "fileName": "bundle.mjs",
         "implicitlyLoadedBefore": [],
         "importedBindings": {},
@@ -120,30 +112,26 @@ export { a_1 as a, test };
         "isImplicitEntry": false,
         "map": null,
         "moduleIds": [
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/foo.js",
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.0.0/node_modules/a-treeshakable-pkg/dist/bundle.js",
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/foo.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.1.0/node_modules/a-treeshakable-pkg/dist/bundle.esm.js",
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js",
         ],
         "modules": {
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.0.0/node_modules/a-treeshakable-pkg/dist/bundle.js": {
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.1.0/node_modules/a-treeshakable-pkg/dist/bundle.esm.js": {
             "code": "const a = () => {
   console.log(\`i'm function A\`);
-};
-
-var a_1 = a;",
-            "originalLength": 225,
+};",
+            "originalLength": 185,
             "removedExports": [
-              "__moduleExports",
               "b",
               "c",
-              "default",
             ],
             "renderedExports": [
               "a",
             ],
-            "renderedLength": 67,
+            "renderedLength": 53,
           },
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/foo.js": {
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/foo.js": {
             "code": "var foo = \\"hello world!\\";",
             "originalLength": 31,
             "removedExports": [],
@@ -152,7 +140,7 @@ var a_1 = a;",
             ],
             "renderedLength": 25,
           },
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/src/index.js": {
+          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js": {
             "code": "function test() {
   console.log(foo);
 }",

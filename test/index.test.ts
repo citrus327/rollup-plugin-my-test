@@ -8,7 +8,7 @@ import { OutputOptions } from "rollup";
 import { RollupOptions } from "rollup";
 
 const inputOptions: RollupOptions = {
-  input: "test/src/index.js",
+  input: "test/manifest/index.js",
   plugins: [commonjs(), nodeResolve(), myPlugin()],
 };
 
