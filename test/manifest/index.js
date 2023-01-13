@@ -1,8 +1,7 @@
-import foo from "./foo.js";
-import { a } from "a-treeshakable-pkg";
+import foo from "@test/manifest/foo";
+import { b, c } from "@test/manifest/bar";
 
-export function test() {
+export { b, c };
+export function main() {
   console.log(foo);
 }
-
-export { a };

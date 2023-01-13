@@ -7,71 +7,63 @@ exports[`suite > should passes 1`] = `
       {
         "code": "'use strict';
 
-var foo = \\"hello world!\\";
+var foo = require('@test/manifest/foo');
+var bar = require('@test/manifest/bar');
 
-const a = () => {
-  console.log(\`i'm function A\`);
-};
-
-function test() {
+function main() {
   console.log(foo);
 }
 
-exports.a = a;
-exports.test = test;
+Object.defineProperty(exports, 'b', {
+  enumerable: true,
+  get: function () { return bar.b; }
+});
+Object.defineProperty(exports, 'c', {
+  enumerable: true,
+  get: function () { return bar.c; }
+});
+exports.main = main;
 ",
         "dynamicImports": [],
         "exports": [
-          "a",
-          "test",
+          "b",
+          "c",
+          "main",
         ],
         "facadeModuleId": "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js",
         "fileName": "bundle.cjs",
         "implicitlyLoadedBefore": [],
-        "importedBindings": {},
-        "imports": [],
+        "importedBindings": {
+          "@test/manifest/bar": [
+            "b",
+            "c",
+          ],
+          "@test/manifest/foo": [
+            "default",
+          ],
+        },
+        "imports": [
+          "@test/manifest/foo",
+          "@test/manifest/bar",
+        ],
         "isDynamicEntry": false,
         "isEntry": true,
         "isImplicitEntry": false,
         "map": null,
         "moduleIds": [
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/foo.js",
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.1.0/node_modules/a-treeshakable-pkg/dist/bundle.esm.js",
           "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js",
         ],
         "modules": {
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.1.0/node_modules/a-treeshakable-pkg/dist/bundle.esm.js": {
-            "code": "const a = () => {
-  console.log(\`i'm function A\`);
-};",
-            "originalLength": 185,
-            "removedExports": [
-              "b",
-              "c",
-            ],
-            "renderedExports": [
-              "a",
-            ],
-            "renderedLength": 53,
-          },
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/foo.js": {
-            "code": "var foo = \\"hello world!\\";",
-            "originalLength": 31,
-            "removedExports": [],
-            "renderedExports": [
-              "default",
-            ],
-            "renderedLength": 25,
-          },
           "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js": {
-            "code": "function test() {
+            "code": "function main() {
   console.log(foo);
 }",
-            "originalLength": 131,
+            "originalLength": 147,
             "removedExports": [],
             "renderedExports": [
-              "test",
-              "a",
+              "b",
+              "c",
+              "main",
             ],
             "renderedLength": 39,
           },
@@ -85,70 +77,55 @@ exports.test = test;
   {
     "output": [
       {
-        "code": "var foo = \\"hello world!\\";
+        "code": "import foo from '@test/manifest/foo';
+export { b, c } from '@test/manifest/bar';
 
-const a = () => {
-  console.log(\`i'm function A\`);
-};
-
-function test() {
+function main() {
   console.log(foo);
 }
 
-export { a, test };
+export { main };
 ",
         "dynamicImports": [],
         "exports": [
-          "a",
-          "test",
+          "b",
+          "c",
+          "main",
         ],
         "facadeModuleId": "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js",
         "fileName": "bundle.mjs",
         "implicitlyLoadedBefore": [],
-        "importedBindings": {},
-        "imports": [],
+        "importedBindings": {
+          "@test/manifest/bar": [
+            "b",
+            "c",
+          ],
+          "@test/manifest/foo": [
+            "default",
+          ],
+        },
+        "imports": [
+          "@test/manifest/foo",
+          "@test/manifest/bar",
+        ],
         "isDynamicEntry": false,
         "isEntry": true,
         "isImplicitEntry": false,
         "map": null,
         "moduleIds": [
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/foo.js",
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.1.0/node_modules/a-treeshakable-pkg/dist/bundle.esm.js",
           "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js",
         ],
         "modules": {
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/node_modules/.pnpm/a-treeshakable-pkg@1.1.0/node_modules/a-treeshakable-pkg/dist/bundle.esm.js": {
-            "code": "const a = () => {
-  console.log(\`i'm function A\`);
-};",
-            "originalLength": 185,
-            "removedExports": [
-              "b",
-              "c",
-            ],
-            "renderedExports": [
-              "a",
-            ],
-            "renderedLength": 53,
-          },
-          "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/foo.js": {
-            "code": "var foo = \\"hello world!\\";",
-            "originalLength": 31,
-            "removedExports": [],
-            "renderedExports": [
-              "default",
-            ],
-            "renderedLength": 25,
-          },
           "/Users/hao/spaces/projj/github.com/citrus327/rollup-plugin-my-test/test/manifest/index.js": {
-            "code": "function test() {
+            "code": "function main() {
   console.log(foo);
 }",
-            "originalLength": 131,
+            "originalLength": 147,
             "removedExports": [],
             "renderedExports": [
-              "test",
-              "a",
+              "b",
+              "c",
+              "main",
             ],
             "renderedLength": 39,
           },
