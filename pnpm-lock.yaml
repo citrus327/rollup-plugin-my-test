@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@rollup/plugin-commonjs': ^24.0.0
   '@rollup/plugin-node-resolve': ^15.0.1
-  '@rollup/plugin-typescript': ^10.0.1
+  '@rollup/plugin-typescript': ^11.0.0
   '@types/node': ^18.11.18
   a-treeshakable-pkg: ^1.1.0
   jquery: ^3.6.3
@@ -19,7 +19,7 @@ dependencies:
 devDependencies:
   '@rollup/plugin-commonjs': registry.npmmirror.com/@rollup/plugin-commonjs/24.0.0_rollup@3.9.1
   '@rollup/plugin-node-resolve': registry.npmmirror.com/@rollup/plugin-node-resolve/15.0.1_rollup@3.9.1
-  '@rollup/plugin-typescript': 10.0.1_hqjvco2e22ojmon3nhwchufpre
+  '@rollup/plugin-typescript': 11.0.0_hqjvco2e22ojmon3nhwchufpre
   '@types/node': registry.npmmirror.com/@types/node/18.11.18
   a-treeshakable-pkg: 1.1.0
   jquery: registry.npmmirror.com/jquery/3.6.3
@@ -246,8 +246,8 @@ packages:
     dev: true
     optional: true
 
-  /@rollup/plugin-typescript/10.0.1_hqjvco2e22ojmon3nhwchufpre:
-    resolution: {integrity: sha512-wBykxRLlX7EzL8BmUqMqk5zpx2onnmRMSw/l9M1sVfkJvdwfxogZQVNUM9gVMJbjRLDR5H6U0OMOrlDGmIV45A==}
+  /@rollup/plugin-typescript/11.0.0_hqjvco2e22ojmon3nhwchufpre:
+    resolution: {integrity: sha512-goPyCWBiimk1iJgSTgsehFD5OOFHiAknrRJjqFCudcW8JtWiBlK284Xnn4flqMqg6YAjVG/EE+3aVzrL5qNSzQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^2.14.0||^3.0.0
@@ -843,12 +843,6 @@ packages:
     version: 1.0.0
     dev: true
 
-  registry.npmmirror.com/function-bind/1.1.1:
-    resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/function-bind/-/function-bind-1.1.1.tgz}
-    name: function-bind
-    version: 1.1.1
-    dev: true
-
   registry.npmmirror.com/get-func-name/2.0.0:
     resolution: {integrity: sha512-Hm0ixYtaSZ/V7C8FJrtZIuBBI+iSgL+1Aq82zSu8VQNB4S3Gk8e7Qs3VwBDJAhmRZcFqkl3tQu36g/Foh5I5ig==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/get-func-name/-/get-func-name-2.0.0.tgz}
     name: get-func-name
@@ -872,15 +866,6 @@ packages:
       inherits: registry.npmmirror.com/inherits/2.0.4
       minimatch: registry.npmmirror.com/minimatch/5.1.2
       once: registry.npmmirror.com/once/1.4.0
-    dev: true
-
-  registry.npmmirror.com/has/1.0.3:
-    resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/has/-/has-1.0.3.tgz}
-    name: has
-    version: 1.0.3
-    engines: {node: '>= 0.4.0'}
-    dependencies:
-      function-bind: registry.npmmirror.com/function-bind/1.1.1
     dev: true
 
   registry.npmmirror.com/inflight/1.0.6:
@@ -912,7 +897,7 @@ packages:
     name: is-core-module
     version: 2.11.0
     dependencies:
-      has: registry.npmmirror.com/has/1.0.3
+      has: 1.0.3
     dev: true
 
   registry.npmmirror.com/is-module/1.0.0:
@@ -1227,7 +1212,7 @@ packages:
       '@types/node': registry.npmmirror.com/@types/node/18.11.18
       esbuild: registry.npmmirror.com/esbuild/0.16.16
       postcss: registry.npmmirror.com/postcss/8.4.21
-      resolve: registry.npmmirror.com/resolve/1.22.1
+      resolve: 1.22.1
       rollup: registry.npmmirror.com/rollup/3.9.1
     optionalDependencies:
       fsevents: 2.3.2
